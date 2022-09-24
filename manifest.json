@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  
+  "name": "Grader Extension",
+  "description": "A grader helping tools",
+  "version": "1.0",
+  
+  "permissions": ["tabs"],
+  "web_accessible_resources": [
+    {
+      "matches": ["https://nattee.net/*"],
+      "resources": ["container.html"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://nattee.net/grader/main/list"],
+      "js": ["contentScript.js"],
+      "css": ["container.css"]
+    }
+  ]
+}
