@@ -10,18 +10,31 @@
 .search-bar-container input {
   padding: 10px;
   width: 75%;
-  
+
   outline: none;
 
   border: none;
   border-bottom: 1px solid grey;
+
+  background-color: transparent;
+  color: black;
 }
 
 .completed {
   border-left: 3px solid rgb(68, 157, 68);
 }
 
-.hide { display: none; }
+.hide {
+  display: none;
+}
 
-.pass { font-weight: bold; color: #42855B; }
-.wrong { font-weight: bold; background-color: #E64848; color: white; }
+.pass {
+  font-weight: bold;
+  color: #42855b;
+}
+
+.wrong {
+  font-weight: bold;
+  background-color: #e64848;
+  color: white;
+}

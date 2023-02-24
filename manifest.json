@@ -14,8 +14,12 @@
   ],
   "content_scripts": [
     {
+      "matches": ["https://nattee.net/grader/*"],
+      "css": ["style.css"]
+    },
+    {
       "matches": ["https://nattee.net/grader/main/list"],
-      "js": ["contentScript.js"],
+      "js": ["contentScript.js", "searchBar.js"],
       "css": ["container.css"]
     }
   ]
